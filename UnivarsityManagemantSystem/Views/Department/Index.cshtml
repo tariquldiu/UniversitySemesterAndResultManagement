@@ -1,0 +1,56 @@
+﻿@using UnivarsityManagemantSystem.Models
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_FacultyLayout.cshtml";
+    List<Department> departments =ViewBag.DepartmentList;
+}
+
+<h4><i class="icon-list-ul">Department List</i></h4>
+<!DOCTYPE html>
+@section style
+   {
+
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+
+
+</head>
+<body>
+    <div>
+        <form method="POST" id="saveDeptForm">
+            
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Department department in departments)
+                        {
+                            <tr>
+                                <td>@department.DeptCode</td>
+                                <td>@department.DeptName</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+               
+            
+        </form>
+    </div>
+    @section scripts{
+
+        <script src="~/Scripts/jquery-1.12.4.js"></script>
+        <script src="~/Scripts/jquery.validate.js"></script>
+       
+    }
+</body>
+</html>
+
+

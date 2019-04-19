@@ -1,0 +1,110 @@
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\UnivarsityManagemantSystem.dll.config
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\UnivarsityManagemantSystem.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\UnivarsityManagemantSystem.pdb
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Antlr3.Runtime.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\EntityFramework.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\EntityFramework.SqlServer.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Google.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Newtonsoft.Json.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Owin.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Helpers.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Mvc.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Optimization.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Razor.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.WebPages.Deployment.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.WebPages.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.WebPages.Razor.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\WebGrease.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Helpers.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Mvc.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Optimization.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Razor.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.WebPages.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.WebPages.Deployment.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.WebPages.Razor.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Newtonsoft.Json.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Antlr3.Runtime.pdb
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\EntityFramework.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\EntityFramework.SqlServer.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Google.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\obj\Debug\UnivarsityManagemantSystem.dll
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\obj\Debug\UnivarsityManagemantSystem.pdb
+E:\Programming\Development\BITM\Home Practices\UnivarsityManagemantSystem\UnivarsityManagemantSystem\obj\Debug\UnivarsityManagemantSystem.csprojResolveAssemblyReference.cache
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\UnivarsityManagemantSystem.dll.config
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\UnivarsityManagemantSystem.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\UnivarsityManagemantSystem.pdb
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Antlr3.Runtime.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\EntityFramework.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\EntityFramework.SqlServer.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Google.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Newtonsoft.Json.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Owin.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Helpers.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Mvc.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Optimization.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Razor.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.WebPages.Deployment.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.WebPages.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.WebPages.Razor.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\WebGrease.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Helpers.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Mvc.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Optimization.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.Razor.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.WebPages.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.WebPages.Deployment.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\System.Web.WebPages.Razor.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Newtonsoft.Json.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Antlr3.Runtime.pdb
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\EntityFramework.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\EntityFramework.SqlServer.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Google.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\obj\Debug\UnivarsityManagemantSystem.csprojResolveAssemblyReference.cache
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\obj\Debug\UnivarsityManagemantSystem.dll
+E:\Programming\Development\BITM\Project\UnivarsityManagemantSystem\UnivarsityManagemantSystem\obj\Debug\UnivarsityManagemantSystem.pdb

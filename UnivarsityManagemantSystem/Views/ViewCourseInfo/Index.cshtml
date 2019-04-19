@@ -1,0 +1,81 @@
+﻿@using UnivarsityManagemantSystem.Models
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_FacultyLayout.cshtml";
+    List<Department> departments = ViewBag.DepartmentList;
+}
+
+<h4><i class="icon-info-sign">Course information</i></h4>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+      
+        <form method="POST">
+            <table>
+                <tr>
+                    <td><label for="departmentId">Department Name : </label> </td>
+                    <td>
+                        <select id="departmentId" name="departmentId">
+                            <option value="">- - - - - - - - - Select - - - - - - - - -</option>
+                            @foreach (Department department in departments)
+                            {
+                                <option value="@department.DeptId">@department.DeptName</option>
+                            }
+                        </select>
+                    </td>
+                </tr>
+            </table><br />
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Semester</th>
+                        <th>Assaign To</th>
+                    </tr>
+                </thead>
+                <tbody id="course"></tbody>
+            </table>
+        </form>
+
+    </div>
+    @section scripts
+{
+        <script>
+
+            $(document).ready(function () {
+                $("#departmentId").change(function () {
+                    var deptId = $("#departmentId").val();
+                    $("#course").empty();
+                    var json = { departmentId: deptId };
+                    $.ajax({
+                        type: "POST",
+                        url: '@Url.Action("GetAllCoursesByDepartmentId", "ViewCourseInfo")',
+                        //url: '/ViewCourse/GetAllCoursesByDepartmentId',
+                        contentType: "application/json; charset=utf-8",
+                        data: JSON.stringify(json),
+                        success: function (courseInfo) {
+
+                            $.each(courseInfo,
+                                function (key, value) {
+                                    $("#course").append('<tr><td>' + value.CourseCode + '</td><td>' + value.CourseName + '</td><td>' + value.SemesterName + '</td><td>' + value.TeacherName + '</td></tr>');
+
+                                });
+
+                        }
+                    });
+                });
+            });
+
+        </script>
+    }
+
+</body>
+</html>

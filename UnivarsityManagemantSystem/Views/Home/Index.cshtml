@@ -1,0 +1,77 @@
+﻿@using UnivarsityManagemantSystem.Models
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_FacultyLayout.cshtml";
+    List<Student> students = ViewBag.Students;
+    List<Course> courses= ViewBag.Courses;
+    List<Department>  departments= ViewBag.Departments;
+    List<Teacher>  teachers= ViewBag.Teachers;
+    List<Designation> designations = ViewBag.Designations;
+    List<Room>  rooms= ViewBag.Rooms;
+    List<Semester> semesters = ViewBag.Semesters;
+    List<Day> days = ViewBag.Days;
+}
+<div style="margin:1px;">
+    <h4><i class="icon-desktop">Summary</i></h4>
+    <div class="metro-nav">
+        <div class="metro-nav-block nav-block-orange double">
+            <a data-original-title="" href="#">
+                <i class="icon-group"></i>
+                <div class="info">@students.Count()</div>
+                <div class="status">Students</div>
+            </a>
+        </div>
+        <div class="metro-nav-block nav-olive">
+            <a data-original-title="" href="#">
+                <i class="icon-book"></i>
+                <div class="info">@courses.Count()</div>
+                <div class="status">Courses</div>
+            </a>
+        </div>
+        <div class="metro-nav-block nav-block-yellow double">
+            <a data-original-title="" href="#">
+                <i class="icon-archive"></i>
+                <div class="info">@departments.Count()</div>
+                <div class="status">Departments</div>
+            </a>
+        </div>
+        <div class="metro-nav-block nav-block-green">
+            <a data-original-title="" href="#">
+                <i class="icon-user"></i>
+                <div class="info">@teachers.Count()</div>
+                <div class="status">Teachers</div>
+            </a>
+        </div>
+        
+    </div>
+    <div class="metro-nav">
+        <div class="metro-nav-block nav-light-purple double">
+            <a data-original-title="" href="#">
+                <i class="icon-table"></i>
+                <div class="info">@rooms.Count()</div>
+                <div class="status">Classroom</div>
+            </a>
+        </div>
+        <div class="metro-nav-block nav-block-red">
+            <a data-original-title="" href="#">
+                <i class="icon-border"></i>
+                <div class="info">@designations.Count()</div>
+                <div class="status">Designation</div>
+            </a>
+        </div>
+        <div class="metro-nav-block nav-light-brown double">
+            <a data-original-title="" href="#">
+                <i class="icon-tasks"></i>
+                <div class="info">@semesters.Count()</div>
+                <div class="status">Semesters</div>
+            </a>
+        </div>
+        <div class="metro-nav-block nav-block-grey">
+            <a data-original-title="" href="#">
+                <i class="icon-calendar"></i>
+                <div class="info">@days.Count()</div>
+                <div class="status">Schedule Days</div>
+            </a>
+        </div>
+    </div>
+</div>

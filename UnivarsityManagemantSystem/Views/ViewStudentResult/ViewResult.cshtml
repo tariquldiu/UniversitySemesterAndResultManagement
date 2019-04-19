@@ -1,0 +1,186 @@
+﻿@using UnivarsityManagemantSystem.Models
+@{
+    ViewBag.Title = "ViewResult";
+    Layout = "~/Views/Shared/_FacultyLayout.cshtml";
+    List<Student> students = ViewBag.StudentList;
+}
+
+
+<h4><i class="icon-list hidden-print">Result Sheet</i></h4>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    @section style
+    {
+        <style>
+            label.error {
+                color: red;
+                font-style: italic;
+                display: inline;
+            }
+        </style>
+    }
+
+</head>
+<body>
+    <div>
+        <form method="POST" id="printResultSheetForm">
+            <table>
+
+
+
+                <tr>
+                    <td><label for="StudentId">Student Reg No : </label></td>
+                    <td>
+                        <select id="StudentId" name="StudentId">
+                            <option value="">- - - - - - - - - Select - - - - - - - - -</option>
+                            @foreach (Student student in students)
+                            {
+                                <option value="@student.StudentId">@student.RegNo</option>
+
+                            }
+                        </select>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="StudentName">Name : </label></td>
+                    <td>
+
+                        <input type="text" id="StudentName" name="StudentName" readonly="readonly" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Email">Email : </label></td>
+                    <td>
+
+                        <input type="text" id="Email" name="Email" readonly="readonly" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="DepartmentName">Department : </label></td>
+                    <td>
+
+                        <input type="text" id="DepartmentName" name="DepartmentName" readonly="readonly" />
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                        <td></td>
+                        <td><button class="btn btn-success hidden-print"  onclick="myFunction()">Print</button></td>
+
+                    </tr>
+
+            </table>
+            <br />
+           
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Grade</th>
+
+                    </tr>
+                </thead>
+                <tbody id="result"></tbody>
+            </table>
+        </form>
+    </div>
+    @section scripts{
+
+    <script src="~/Scripts/jquery-1.12.4.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script>
+        $("#printResultSheetForm").validate({
+            rules: {
+                StudentId: "required",
+
+            },
+            messages: {
+                StudentId: "Please select student reg no before printing",
+            }
+        });
+
+    </script>
+
+        <script>
+
+            $(document).ready(function () {
+                $("#StudentId").change(function () {
+                    var id = $("#StudentId").val();
+
+                    var json = { studentId: id };
+
+                    $.ajax({
+                        type: "POST",
+                        url: '@Url.Action("GetStudentById", "ViewStudentResult")',
+                        contentType: "application/json; charset=utf-8",
+                        data: JSON.stringify(json),
+                        success: function (data) {
+
+                            var studentName = data.StudentName;
+                            var email = data.Email;
+                            var departmentName = data.DepartmentName;
+                            $("#StudentName").val(studentName);
+                            $("#Email").val(email);
+                            $("#DepartmentName").val(departmentName);
+
+                        }
+                    });
+                });
+
+                //show course
+                $("#StudentId").change(function () {
+                    var id = $("#StudentId").val();
+                    $("#result").empty();
+
+                    var json = { studentId: id };
+
+                    $.ajax({
+                        type: "POST",
+                        url: '@Url.Action("GetResultById", "ViewStudentResult")',
+                        contentType: "application/json; charset=utf-8",
+                        data: JSON.stringify(json),
+                        success: function (result) {
+
+                            $.each(result, function (key, value) {
+
+                                $("#result").append('<tr><td>' + value.CourseCode + '</td><td>' + value.CourseName + '</td><td>' + value.GradeLetter + '</td></tr>');
+
+                            });
+
+                        }
+                    });
+                });
+
+            });
+
+   
+            function myFunction() {
+                window.print();
+            }
+
+        </script>
+    }
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

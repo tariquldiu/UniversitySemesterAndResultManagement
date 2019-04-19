@@ -1,0 +1,118 @@
+﻿@using UnivarsityManagemantSystem.Models 
+@{
+    ViewBag.Title = "Schedule";
+    Layout = "~/Views/Shared/_FacultyLayout.cshtml";
+    //List<ViewClassSchedule> schedules = ViewBag.Schedules;
+    List<Department> departments = ViewBag.DepartmentList;
+}
+
+<h4 style="display:inline-block;"><i class="icon-time hidden-print">Class Schedule</i></h4>
+<button style="margin-top:75px;float:right;" class="btn btn-success hidden-print" onclick="myFunction()">Print</button>
+<!DOCTYPE html>
+@section style
+    {
+    <style>
+        label.error {
+            color: red;
+            font-style: italic;
+            display: inline;
+        }
+    </style>
+
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+   
+</head>
+<body>
+    <div>
+        <form method="POST" id="printScheduleForm">
+            <table>
+                <tr>
+                    <td><label for="departmentId">Department : </label> </td>
+                    <td>
+                        <select id="departmentId" name="departmentId">
+                            <option value="">- - - - - - - - - Select - - - - - - - - -</option>
+                            @foreach (Department department in departments)
+                            {
+                                <option value="@department.DeptId">@department.DeptName</option>
+                            }
+                        </select>
+                    </td>
+
+
+                </tr>
+            </table><br />
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Room No</th>
+                        <th>Day</th>
+                        <th>From</th>
+                        <th>To</th>
+
+                    </tr>
+                </thead>
+                <tbody id="schedule"></tbody>
+            </table>
+        </form>
+    </div>
+    @section scripts{
+    <script src="~/Scripts/jquery-1.12.4.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script>
+        $("#printScheduleForm").validate({
+            rules: {
+                DepartmentId: "required",
+               
+            },
+            messages: {
+                DepartmentId: "Please select department before printing",
+            }
+        });
+
+    </script>
+        <script>
+          
+            $(document).ready(function () {
+                $("#departmentId").change(function () {
+                    var deptId = $("#departmentId").val();
+                    $("#schedule").empty();
+                    var json = { departmentId: deptId };
+                    $.ajax({
+                        type: "POST",
+                        url: '@Url.Action("GetScheduleByDeptId", "ViewSchedule")',
+                        //url: '/ViewCourse/GetAllCoursesByDepartmentId',
+                        contentType: "application/json; charset=utf-8",
+                        data: JSON.stringify(json),
+                        success: function (classSchedule) {
+
+                            $.each(classSchedule,
+                                function (key, value) {
+                                    $("#schedule").append('<tr><td>' + value.CourseCode + '</td><td>' + value.CourseName + '</td><td>' + value.RoomNo + '</td><td>' + value.DayName + '</td><td>' + value.FromTime + '</td><td>' + value.ToTime + '</td></tr>');
+                                
+                                   
+       
+
+                                });
+
+                        }
+                    });
+                });
+            });
+            function myFunction() {
+                window.print();
+            }
+        </script>
+    }
+</body>
+</html>
+
+
+
+

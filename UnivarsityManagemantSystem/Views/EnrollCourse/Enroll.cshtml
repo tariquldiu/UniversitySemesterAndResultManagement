@@ -1,0 +1,188 @@
+﻿@using UnivarsityManagemantSystem.Models
+@{
+    ViewBag.Title = "Enroll";
+    Layout = "~/Views/Shared/_FacultyLayout.cshtml";
+    List<Course> courses = ViewBag.CourseList;
+    List<Student> students = ViewBag.StudentList;
+}
+
+<h4><i class="icon-plus-sign">Enroll Course</i></h4>
+<!DOCTYPE html>
+@section style
+    {
+    <style>
+        label.error {
+            color: red;
+            font-style: italic;
+            display: inline;
+        }
+    </style>
+
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    
+</head>
+<body>
+    <div>
+        <form method="POST" id="saveEnrollCourseForm">
+            <table>
+
+           
+
+                <tr>
+                    <td><label for="StudentId">Student Reg No : </label></td>
+                    <td>
+                        <select id="StudentId" name="StudentId">
+                            <option value="">- - - - - - - - - Select - - - - - - - - -</option>
+                            @foreach (Student student in students)
+                            {
+                                <option value="@student.StudentId">@student.RegNo</option>
+
+                            }
+                        </select>
+
+                    </td>
+
+                </tr>
+                    <tr>
+                        <td><label for="StudentName">Name : </label></td>
+                        <td>
+
+                            <input type="text" id="StudentName" name="StudentName" readonly="readonly" />
+                           </td>
+                 </tr>
+                <tr>
+                    <td><label for="Email">Email : </label></td>
+                    <td>
+
+                        <input type="text" id="Email" name="Email" readonly="readonly" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="DepartmentName">Department : </label></td>
+                    <td>
+
+                        <input type="text" id="DepartmentName" name="DepartmentName" readonly="readonly" />
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><label for="CourseId">Course : </label></td>
+                    <td>
+                        <select id="CourseId" name="CourseId">
+                            <option value="">- - - - - - - - - Select - - - - - - - - -</option>
+
+                        </select>
+                    </td>
+                </tr>
+              
+
+                <tr>
+            <td><label for="">Date: </label></td>
+            <td>
+
+                <input type="date" id="Date" name="Date"  />
+            </td>
+        </tr>
+
+
+                <tr>
+                    <td></td>
+                    <td><input type="submit" class="btn btn-success" value="Enroll" /></td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><h4>@ViewBag.Message</h4></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    @section scripts{
+        <script src="~/Scripts/jquery-1.10.2.js"></script>
+        <script src="~/Scripts/jquery-3.3.1.js"></script>
+
+        <script src="~/Scripts/jquery.validate.js"></script>
+
+
+        <script>
+            $("#saveEnrollCourseForm").validate({
+                rules: {
+                    StudentId: "required",                  
+                    CourseId: "required",                
+                    Date:"required"
+                },
+                messages: {
+                    StudentId: "Please select registration number",                            
+                    CourseId: "Please select a course",                  
+                    Date: "Please select a date",
+
+
+                }
+            });
+
+            $(document).ready(function () {              
+                $("#StudentId").change(function () {
+                    var id = $("#StudentId").val();
+           
+                    var json = { studentId: id };
+
+                    $.ajax({
+                        type: "POST",
+                        url: '@Url.Action("GetStudentById","EnrollCourse")',
+                        contentType: "application/json; charset=utf-8",
+                        data: JSON.stringify(json),
+                        success: function (data) {
+
+                            var studentName = data.StudentName;
+                            var email = data.Email;
+                            var departmentName = data.DepartmentName
+                            $("#StudentName").val(studentName);
+                            $("#Email").val(email);
+                            $("#DepartmentName").val(departmentName);
+
+                        }
+                    });
+                });
+
+                        //show course
+                $("#StudentId").change(function () {
+                    var id = $("#StudentId").val();
+                    $("#CourseId").empty();
+                    $("#CourseId").append('<option value=' + "" + '>- - - - - - Select Course - - - - - - </option>');
+                    var json = { StudentId: id };
+
+                    $.ajax({
+                        type: "POST",
+                        url: '@Url.Action("GetCourseById", "EnrollCourse")',
+                        contentType: "application/json; charset=utf-8",
+                        data: JSON.stringify(json),
+                        success: function (courses) {
+
+                            $.each(courses, function (key, value) {
+
+                                $("#CourseId").append('<option value=' + value.CourseId + '>' + value.CourseName + '</option>');
+
+                            });
+
+                        }
+                    });
+                });
+               
+            });
+
+        </script>
+    }
+</body>
+</html>
+
+
+
+
+
+
+
